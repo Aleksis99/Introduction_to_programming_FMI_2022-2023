@@ -39,10 +39,11 @@
 ```
 #include <iostream>
 using namespace std;
+
 int main() {
-int c = 5;
-int d = (c += 3 ) + (c += 5);
-cout << d;
+    int c = 5;
+    int d = (c += 3 ) + (c += 5);
+    cout << d;
 ```
 
 ```
@@ -57,12 +58,13 @@ return 0;
 ```
 #include <iostream>
 using namespace std;
+
 int main() {
-int c = 5;
-if (c += c -= 5)
-cout << (c *= 10);
-else
-cout << c;
+    int c = 5;
+    if (c += c -= 5)
+    cout << (c *= 10);
+    else
+    cout << c;
 }
 ```
 Защо?
@@ -73,9 +75,10 @@ cout << c;
 ```
 #include <iostream>
 using namespace std;
+
 int main() {
-int c = 5;
-cout << ((c == 6) || (c / 0));
+    int c = 5;
+    cout << ((c == 6) || (c / 0));
 }
 ```
 Защо?
@@ -86,9 +89,10 @@ cout << ((c == 6) || (c / 0));
 ```
 #include <iostream>
 using namespace std;
+
 int main() {
-int c = 5;
-cout << ((c == 6) && (c / 0));
+    int c = 5;
+    cout << ((c == 6) && (c / 0));
 }
 ```
 Защо?
@@ -100,18 +104,19 @@ cout << ((c == 6) && (c / 0));
 ```
 #include <iostream>
 using namespace std;
+
 int main() {
-int c = 5;
-double e = 0;
-cout << ((c = 6) && (e = 1));
-cout << c << " " << e;
+   int c = 5;
+   double e = 0;
+   cout << ((c = 6) && (e = 1));
+   cout << c << " " << e;
 }
 ```
 Защо?
 
 Задача 10*:
 Да се реши квадратно уравнение, като предварително от потребителя са въведени
-a, b и с където:
-ax^2 +bx+c= 0
+	a, b и с където:
+	ax^2 +bx+c= 0
 
 
