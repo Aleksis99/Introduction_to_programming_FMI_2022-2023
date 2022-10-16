@@ -37,10 +37,7 @@ int main() {
     int c = 5;
     int d = (c += 3 ) + (c += 5);
     cout << d;
-```
-
-```
-return 0;
+    return 0;
 }
 ```
 Защо?
