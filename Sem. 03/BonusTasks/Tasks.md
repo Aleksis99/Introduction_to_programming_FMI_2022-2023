@@ -13,13 +13,9 @@
 Изход:
 
 1
-
 12
-
 123
-
 1234
-
 12345
 
 2.Да се състави програма, която по въведено естествено число n да изведе всички естествени решения на уравнението x + y = n.
@@ -106,22 +102,14 @@ x = 3 y = 1
 
 Изход
 
-    x
-    
-   xxx
-   
-  xxxxx
-  
- xxxxxxx
- 
-xxxxxxxxx
-
- xxxxxxx
- 
-  xxxxx
-  
-   xxx
-   
-    x
+     x
+    xxx
+   xxxxx  
+  xxxxxxx
+ xxxxxxxxx
+  xxxxxxx
+   xxxxx
+    xxx
+     x
 
 
