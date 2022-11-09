@@ -89,7 +89,7 @@ int lcm(int n, int k)
 	return (n * k / gcd(n, k));
 }
 
-int lcmOfArray(int arr[], int n) 
+int lcmOfArray(int arr[], int n)
 {
 	int result = arr[0];
 
@@ -100,7 +100,7 @@ int lcmOfArray(int arr[], int n)
 	return result;
 }
 
-int inversionCount(int arr[], int n) 
+int inversionCount(int arr[], int n)
 {
 	int result = 0;
 
@@ -117,11 +117,28 @@ int inversionCount(int arr[], int n)
 	return result;
 }
 
+int findSmallestMissing(int arr[], int n)
+{
+	int l = 0, h = n - 1, start = arr[0];
+	int mid = (l + h) / 2;
+	while (l <= h) {
+		if (arr[mid] - start > mid) {
+			h = mid - 1;
+		}
+		else if (arr[mid] - start == mid) {
+			l = mid + 1;
+		}
+		else {
+			return mid + start + 1;
+		}
+
+		mid = (l + h) / 2;
+	}
+
+	return mid + start + 1;
+}
+
 int main()
 {
-	int n;
-	//cin >> n;
-	int arr[SIZE]{ 1 ,2 ,3 ,2 ,1 ,4 ,5, 5, 10};
-	cout << lcmOfArray(arr, 9);
 
 }
