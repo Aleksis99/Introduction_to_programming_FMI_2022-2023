@@ -47,14 +47,14 @@ int main()
 
 	for (int i = 0; i < n; i++)
 	{
-		bool countInCircle = inCircle(circleX, circleY, radius, x[i], y[i]);
-		bool pointInRectangle = inRectangle(x1, y1, x2, y2, x[i], y[i]);
+		bool inCircle = inCircle(circleX, circleY, radius, x[i], y[i]);
+		bool inRectangle = inRectangle(x1, y1, x2, y2, x[i], y[i]);
 
-		countInCircle += (int)countInCircle;
+		countInCircle += (int)inCircle;
 
-		countInRectangle += (int)pointInRectangle;
+		countInRectangle += (int)inRectangle;
 
-		countInBoth += (int)(countInCircle && pointInRectangle);
+		countInBoth += (int)(inCircle && inRectangle);
 	}
 
 	cout << "Points in circle: " << countInCircle << endl;
